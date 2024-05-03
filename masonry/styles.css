@@ -71,3 +71,25 @@ main .tall {
 }
 
 /* responsive */
+
+@media screen and (max-width: 980px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:620px) {
+    main {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    nav {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    nav h1 {
+        grid-column: 1 / span 4;
+        grid-row: 1;
+    }
+}
