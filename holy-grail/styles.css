@@ -29,6 +29,9 @@ nav {
 
 nav li {
     text-decoration: underline;
+    font-weight: 450;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 article {
