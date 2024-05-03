@@ -59,3 +59,41 @@ footer {
     grid-column: span 3;
     text-align: center;
 }
+
+/* responsive styles */
+
+@media screen and (max-width: 1200px) {
+    nav {
+        grid-column: span 3;
+        border-radius: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    article {
+        grid-column: span 2;
+    }
+
+    aside {
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    nav, article, aside {
+        grid-column: span 3;
+    }
+
+    aside {
+        border-left: 0;
+        border-top: 1px solid #ddd;
+    }
+
+    article h2 {
+        font-size: 2.5em;
+    }
+}
